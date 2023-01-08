@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var count = 0;
-        val randomIntent = Intent (this, Activity2::class.java)
+        val randomIntent = Intent(this, Activity2::class.java)
         val textView = findViewById<TextView>(R.id.textView)
         textView.setOnClickListener {
-            textView.text = textView.text.subSequence(0,9).toString()+count.toString();
+            textView.text = textView.text.subSequence(0, 9).toString() + count.toString();
             randomIntent.putExtra("some_count", count)
             count++;
         }

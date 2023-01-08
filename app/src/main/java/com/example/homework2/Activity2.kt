@@ -12,7 +12,7 @@ class Activity2 : AppCompatActivity() {
         setContentView(R.layout.activity_2)
         val count = intent.getIntExtra("some_count", 0)
         val textView = findViewById<TextView>(R.id.textView2)
-        textView.text = textView.text.toString()+count.toString();
+        textView.text = textView.text.toString() + count.toString();
         textView.setOnClickListener {
         }
     }
